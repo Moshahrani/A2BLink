@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../css/CustomNavbar.css";
-// import A2B from ".//assets/A2B.png";
+import A2B from "../assets/A2B.jpg";
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -57,7 +57,7 @@ const CustomNavbar = () => {
             Contact
           </Nav.Link>
         </Nav>
-        {/* <img src={}  className="custom-logo" alt="Brand Logo" /> */}
+        <img src={A2B}  className="custom-logo" alt="Brand Logo" />
       </Navbar.Collapse>
     </Navbar>
   );

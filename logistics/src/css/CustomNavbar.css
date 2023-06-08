@@ -18,14 +18,20 @@
   
   .custom-navbar {
     z-index: 1000;
-    background-color: black;
+    background-color: white;
     position: sticky;
   }
   
   .custom-navbar .nav-link {
-    color: #fff;
-    font-size: 18px;
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+    /* font-size: 1.60vw; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: "Arial", sans-serif; */
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .navbar-toggler {
