@@ -1,8 +1,9 @@
-.personal-logo {
-  width: 170px;
+.company-logo {
+  /* width: 170px;
   object-fit: contain;
   margin-right: 30px;
-  margin-left: 30px;
+  margin-left: 30px; */
+  display: none;
 }
 .custom-logo {
   width: 400px;
@@ -10,6 +11,7 @@
   object-fit: contain;
   position: absolute;
   right: 0;
+  margin-right: -60px;
 }
 
 .custom-logo:hover {
@@ -17,7 +19,7 @@
 }
 
 .custom-navbar {
-  z-index: 1000;
+  /* z-index: 1000; */
   background-color: white;
   position: sticky;
   margin-top: 10px;
@@ -35,6 +37,10 @@
   margin-bottom: 20px;
 }
 
+.custom-navbar .nav-link:hover {
+  color: #ffb901;
+}
+
 .navbar-toggler {
   margin-right: 20px;
 }
@@ -46,6 +52,13 @@
 @media (max-width: 992px) {
   .custom-logo {
     display: none;
+  }
+  .company-logo {
+      width: 170px;
+  object-fit: contain;
+  margin-right: 30px;
+  margin-left: 30px;
+  display: block;
   }
 }
 
