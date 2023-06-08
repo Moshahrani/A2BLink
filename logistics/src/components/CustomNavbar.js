@@ -3,6 +3,8 @@ import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../css/CustomNavbar.css";
 import A2B from "../assets/A2B.jpg";
+import resized from "../assets/resized.png";
+
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -57,7 +59,7 @@ const CustomNavbar = () => {
             Contact
           </Nav.Link>
         </Nav>
-        <img src={A2B}  className="custom-logo" alt="Brand Logo" />
+        <img src={resized}  className="custom-logo" alt="Brand Logo"/>
       </Navbar.Collapse>
     </Navbar>
   );
