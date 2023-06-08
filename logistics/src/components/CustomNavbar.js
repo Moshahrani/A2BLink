@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../css/CustomNavbar.css";
-import A2B from "../assets/A2B.jpg";
 import resized from "../assets/resized.png";
 
 
@@ -33,14 +32,13 @@ const CustomNavbar = () => {
       expand="lg"
       expanded={expanded}
       onToggle={setExpanded}
-      // bg="dark"
       variant="dark"
       style={{ opacity: opacity }}
     >
       <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
-        {/* <img src={} className="personal-logo" alt="Personal Logo" /> */}
+        <img src={resized} className="company-logo" alt="Personal Logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: '#fff', backgroundColor: '#000' }}  />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
