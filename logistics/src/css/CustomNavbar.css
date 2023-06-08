@@ -1,0 +1,52 @@
+.personal-logo {
+    width: 170px;
+    object-fit: contain;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .custom-logo {
+    width: 300px;
+    /* height: 70px; */
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+  }
+  
+  .custom-logo:hover {
+    cursor:pointer;
+  }
+  
+  .custom-navbar {
+    z-index: 1000;
+    background-color: black;
+    position: sticky;
+  }
+  
+  .custom-navbar .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .navbar-toggler {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 992px) {
+    .custom-logo
+     {
+      display: none;
+    }
+  }
+  
+  /* media query for nav link padding */
+  
+  @media (max-width: 992px) { 
+    .nav-link {
+      margin-left: 10px;
+    }
+  }

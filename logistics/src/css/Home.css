@@ -1,0 +1,19 @@
+.intro-container {
+    color: #ffb901;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.statement {
+    font-size: 5.5vw;
+}
+
+.mission-statement {
+    font-size: 3vw;
+}
+
+
