@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import FourPoints from "./FourPoints";
 import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
@@ -55,6 +56,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <FourPoints />
     </div>
   );
 };
