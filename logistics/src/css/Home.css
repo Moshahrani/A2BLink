@@ -1,13 +1,13 @@
 .intro-container {
-    /* color: #ffb901; */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 30px auto;
-    margin-left: 40px;
-    margin-right: 40px;
+  /* color: #ffb901; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px auto;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* .opening-statement {
@@ -15,23 +15,21 @@
 } */
 
 .statement {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 9vw;
-    margin: 20px;
-    margin-top: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 9vw;
+  margin: 20px;
+  margin-top: 100px;
 }
-
-.opening-statement h1.statement, h2.mission-statement {
-    /* -webkit-text-stroke: 2px #ffb901;
-    -webkit-text-fill-color: white; */
-    text-shadow: 1px 1px 0 black,
-               -2px 2px 0 black,
-               1px -1px 0 black,
-               -2px -2px 0 black;
-  }
 
 .mission-statement {
-    font-size: 3.5vw;
+  font-size: 3.5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+.opening-statement h1.statement,
+h2.mission-statement {
+  /* -webkit-text-stroke: 2px #ffb901;
+    -webkit-text-fill-color: white; */
+  text-shadow: 1px 1px 0 black, -2px 2px 0 black, 1px -1px 0 black,
+    -2px -2px 0 black;
+}
