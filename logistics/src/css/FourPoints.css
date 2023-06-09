@@ -1,0 +1,26 @@
+.fourstep-container {
+    margin: auto 0;
+  }
+  
+  .fourstep-main-text {
+    font-size: 5vw;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .info-row {
+    display: flex; 
+    justify-content: space-between;
+  }
+  
+  .info-container {
+    width: calc(50% - 10px); 
+  }
+
+  .four-image {
+    width: 350px;
+    height: 260px;
+  }
