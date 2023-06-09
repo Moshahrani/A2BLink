@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "../css/CustomNavbar.css";
 import resized from "../assets/resized.png";
 
-
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
   const [opacity, setOpacity] = useState(1);
@@ -13,7 +12,7 @@ const CustomNavbar = () => {
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled > 50) { 
-        setOpacity(0.7);
+        setOpacity(0.6);
       } else {
         setOpacity(1);
       }
