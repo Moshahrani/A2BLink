@@ -1,0 +1,84 @@
+.Threestep-component {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.Threestep-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/arrows.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Threestep-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Threestep-container h2 {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-size: 46px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.Threestep-container h2::after {
+  content: "";
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  border-bottom: 4px solid #ffb901;
+  padding-bottom: 10px;
+}
+
+.sub-container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;
+  gap: 10px;
+  width: 80%;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffb901;
+}
+
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sub-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.sub-content p {
+  font-size: 15px;
+  color: #d3d3d3;
+  width: 250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
