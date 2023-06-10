@@ -4,6 +4,7 @@ import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
 const Home = () => {
+
   const videoRef = useRef();
 
   // video should autoplay across all devices and screen sizes
@@ -41,7 +42,7 @@ const Home = () => {
         <video
           ref={videoRef}
           src={Cargo}
-          autoPlay="autoplay"
+          // autoPlay="autoplay"
           playsInLine="playsinline"
           loop="true"
           muted="true"
