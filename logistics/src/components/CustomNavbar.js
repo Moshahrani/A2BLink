@@ -34,9 +34,9 @@ const CustomNavbar = () => {
       variant="dark"
       style={{ opacity: opacity }}
     >
-      <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
-        <img src={resized} className="company-logo" alt="Personal Logo" />
-      </Navbar.Brand>
+      <Navbar.Brand >
+       <img src={resized} className="company-logo" alt="company Logo" />
+       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: '#fff', backgroundColor: '#000' }}  />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
@@ -56,7 +56,7 @@ const CustomNavbar = () => {
             Contact
           </Nav.Link>
         </Nav>
-        <img src={resized}  className="custom-logo" alt="Brand Logo"/>
+        <img src={resized}  className="custom-logo" alt="Brand Logo" />
       </Navbar.Collapse>
     </Navbar>
   );
