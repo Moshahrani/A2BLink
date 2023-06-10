@@ -1,7 +1,7 @@
 .consult-container {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 450px;
   }
   
   .consult-image {
@@ -14,7 +14,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* opacity: 0.9; */
   }
   
   .consult-text {
@@ -25,6 +24,7 @@
     text-align: left;
     color: white;
     width: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .consult-text h2 {
@@ -43,3 +43,22 @@
   .consult-text p {
     font-size: 16px;
   }
+
+  .consult-text button {
+    background-color: #ffb901;
+    color: black;
+    border: none;
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  
+  .consult-text button:hover {
+    background-color: white;
+  }
+  
