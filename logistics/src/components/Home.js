@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import FourPoints from "./FourPoints";
+import Consultation from "./Consultation";
+import ThreeStep from "./ThreeStep";
+import Contact from "./Contact";
 import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
@@ -13,11 +16,6 @@ const Home = () => {
       videoRef.current.play();
     }
   }, []);
-
-  const contentStyles = {
-    position: "relative",
-    zIndex: 2,
-  };
 
   const styles = {
     position: "relative",
@@ -58,6 +56,9 @@ const Home = () => {
         </div>
       </div>
       <FourPoints />
+      <Consultation />
+      <ThreeStep />
+      <Contact />
     </div>
   );
 };
