@@ -12,7 +12,7 @@ const CustomNavbar = () => {
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled > 50) { 
-        setOpacity(0.6);
+        setOpacity(.9);
       } else {
         setOpacity(1);
       }
