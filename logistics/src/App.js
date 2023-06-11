@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Shipping from "./components/Shipping";
 import Lead from "./components/Lead";
-import Contact from "./components/Contact";
+import Contact from "./components/ContactForm";
 import Footer from "./components/Footer";
 import "./App.css";
 
