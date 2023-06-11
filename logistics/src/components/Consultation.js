@@ -1,13 +1,13 @@
 import "../css/Consultation.css";
 
-const Consultation = () => {
+const Consultation = ({ onContactUsClick }) => {
     return (
         <div className="consult-container">
           <div className="consult-image"></div>
           <div className="consult-text">
             <h2>Do you need a consultation?</h2>
             <p>Express can give you lots of advantages, from which you will surely benefit.</p>
-            <button>Contact Us</button>
+            <button onClick={onContactUsClick}>Contact Us</button>
           </div>
         </div>
       );
