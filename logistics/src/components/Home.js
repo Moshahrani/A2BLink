@@ -3,18 +3,17 @@ import FourPoints from "./FourPoints";
 import Consultation from "./Consultation";
 import ThreeStep from "./ThreeStep";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
 const Home = () => {
-  
   // user clicks on contact us and then scrolls down to contact form
   const contactFormRef = useRef(null);
 
   const scrollToContactForm = () => {
-    contactFormRef.current.scrollIntoView({ behavior: 'smooth' });
+    contactFormRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
 
   const videoRef = useRef();
 
@@ -43,7 +42,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <div style={styles}>
         <video
           ref={videoRef}
@@ -54,19 +53,31 @@ const Home = () => {
           muted="true"
           style={videoStyles}
         />
+        <div
+          className="overlay"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.15)",
+            zIndex: "-1",
+          }}
+        ></div>
         <div className="intro-container">
           <div className="opening-statement">
-            <h1 className="statement">We Keep Your Freight Moving!</h1>
-            <h2 className="mission-statement">
-              Access to thousands of qualified carriers!
-            </h2>
+            <h1 className="statement">
+              Revolutionizing the way freight is moved
+            </h1>
           </div>
         </div>
       </div>
       <FourPoints />
-      <Consultation onContactUsClick={scrollToContactForm} />
+      <Consultation />
       <ThreeStep />
-      <ContactForm ref={contactFormRef} />
+      {/* <ContactForm ref={contactFormRef} /> */}
+      <Footer />
     </div>
   );
 };
