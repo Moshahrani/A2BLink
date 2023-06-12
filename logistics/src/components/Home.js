@@ -8,12 +8,6 @@ import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
 const Home = () => {
-  // user clicks on contact us and then scrolls down to contact form
-  const contactFormRef = useRef(null);
-
-  const scrollToContactForm = () => {
-    contactFormRef.current.scrollIntoView({ behavior: "smooth" });
-  };
 
   const videoRef = useRef();
 
