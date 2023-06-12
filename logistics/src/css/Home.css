@@ -1,13 +1,18 @@
+.main-container {
+  position: relative;
+  padding-bottom: 50px;
+}
 .intro-container {
+  color: black;
   /* color: #ffb901; */
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 30px auto;
+  /* margin: 30px auto; */
   margin-left: 40px;
   margin-right: 40px;
+  height: calc(100% - 140px);
 }
 
 .statement {
@@ -24,6 +29,7 @@
 
 .opening-statement h1.statement,
 h2.mission-statement {
-  text-shadow: 1px 1px 0 black, -2px 2px 0 black, 1px -1px 0 black,
-    -2px -2px 0 black;
+  text-shadow: 1px 1px 0 #ffb901, -2px 2px 0 #ffb901, 1px -1px 0 #ffb901,
+    -2px -2px 0 #ffb901;
+    
 }
