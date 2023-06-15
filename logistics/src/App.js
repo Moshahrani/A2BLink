@@ -12,52 +12,46 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="app-container">
         <CustomNavbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Home />
-              </>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <>
-                <About />
-              </>
-            }
-          />
-          <Route
-            path="/shipping"
-            element={
-              <>
-                <Shipping />
-              </>
-            }
-          />
-          {/* <Route
-            path="/lead"
-            element={
-              <>
-                <Lead />
-              </>
-            }
-          /> */}
-          <Route
-            path="/contact"
-            element={
-              <>
-                <Contact />
-              </>
-            }
-          />
-        </Routes>
+        <div className="content-container">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                </>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <>
+                  <About />
+                </>
+              }
+            />
+            <Route
+              path="/shipping"
+              element={
+                <>
+                  <Shipping />
+                </>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <>
+                  <Contact />
+                </>
+              }
+            />
+          </Routes>
+        </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };
