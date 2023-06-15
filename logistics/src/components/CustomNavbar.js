@@ -12,7 +12,7 @@ const CustomNavbar = () => {
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled > 50) { 
-        setOpacity(.9);
+        setOpacity(1);
       } else {
         setOpacity(1);
       }
@@ -49,9 +49,9 @@ const CustomNavbar = () => {
           <Nav.Link as={Link} to="/shipping" onClick={() => setExpanded(false)}>
             Shipping
           </Nav.Link>
-          <Nav.Link as={Link} to="/lead" onClick={() => setExpanded(false)}>
+          {/* <Nav.Link as={Link} to="/lead" onClick={() => setExpanded(false)}>
             Lead
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link as={Link} to="/contact" onClick={() => setExpanded(false)}>
             Contact
           </Nav.Link>
