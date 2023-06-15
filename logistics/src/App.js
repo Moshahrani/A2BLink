@@ -39,14 +39,14 @@ const App = () => {
               </>
             }
           />
-          <Route
+          {/* <Route
             path="/lead"
             element={
               <>
                 <Lead />
               </>
             }
-          />
+          /> */}
           <Route
             path="/contact"
             element={
