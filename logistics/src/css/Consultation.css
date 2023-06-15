@@ -37,7 +37,9 @@
     width: 30%;
     /* margin: 0 auto; */
     border-bottom: 4px solid #ffb901;
-    padding-bottom: 10px;
+    /* padding-bottom: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .consult-text p {
