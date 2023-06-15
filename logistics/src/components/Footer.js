@@ -3,7 +3,7 @@ import "../css/Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div className="logo-container">
         {/* <Logo /> */}
       </div>
@@ -15,7 +15,7 @@ function Footer() {
         <Link to="/twitter"><SocialMediaIcon type="twitter" /></Link>
         <Link to="/linkedin"><SocialMediaIcon type="linkedin" /></Link>
       </div> */}
-    </footer>
+    </div>
   );
 }
 
