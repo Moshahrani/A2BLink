@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import "../css/Contact.css";
+import "../css/ContactForm.css";
 
 const ContactForm = forwardRef((props, ref) => {
 
