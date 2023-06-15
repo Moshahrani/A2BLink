@@ -71,7 +71,7 @@ const Home = () => {
       <Consultation />
       <ThreeStep />
       {/* <ContactForm ref={contactFormRef} /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
