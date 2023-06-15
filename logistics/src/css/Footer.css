@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,11 +10,12 @@
   bottom: 0;
   width: 100%;
   margin: auto 0;
-}
+  margin-top: auto;
+} */
 
-.logo-container {
-}
-
+/* .logo-container {
+} */
+/* 
 .copyright-container {
  margin-top: 10px;
 }
@@ -25,4 +26,16 @@
 
 .social-media-container a {
   margin-left: 10px;
+} */
+
+
+.footer {
+  margin-top: auto;
+  margin: 0;
+  height: 60px;
+  background-color: #323232;
+  color: #ffb901;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
