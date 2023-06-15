@@ -1,10 +1,9 @@
-import Footer from "./Footer";
+import FourPoints from "./FourPoints";
 
-const Shipping = () => {
-    return (
-      <div>
-      </div>
-    );
-  };
+const Shipping = () => (
+  <div className="shipping-container">
+    <FourPoints />
+  </div>
+);
   
   export default Shipping;
