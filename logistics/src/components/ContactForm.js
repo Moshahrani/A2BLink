@@ -1,10 +1,10 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import "../css/ContactForm.css";
 
-const ContactForm = forwardRef((props, ref) => {
+const ContactForm = () => {
 
   return (
-    <div ref={ref} className="form-container">
+    <div className="form-container">
       <form className="contact-form">
         <label>
           Name:
@@ -26,6 +26,6 @@ const ContactForm = forwardRef((props, ref) => {
       </form>
     </div>
   );
-});
+};
 
 export default ContactForm;
