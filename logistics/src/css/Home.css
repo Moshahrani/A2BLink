@@ -19,11 +19,13 @@
   font-size: 7vw;
   margin: 20px;
   margin-top: 100px;
+  animation: falling 2s ease forwards;
 }
 
 .mission-statement {
   font-size: 3vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: falling 2s ease forwards;
 }
 
 .opening-statement h1.statement,
@@ -31,4 +33,17 @@ h2.mission-statement {
   text-shadow: 1px 1px 0 #ffb901, -2px 2px 0 #ffb901, 1px -1px 0 #ffb901,
     -2px -2px 0 #ffb901;
     
+}
+
+/* animations  */
+
+@keyframes falling {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
