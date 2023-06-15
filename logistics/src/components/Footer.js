@@ -21,7 +21,7 @@ import "../css/Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} A2B Link. All rights reserved.</p>
     </footer>
   );
 };
