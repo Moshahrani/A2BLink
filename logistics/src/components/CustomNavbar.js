@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../css/CustomNavbar.css";
 import resized from "../assets/resized.png";
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
   const [opacity, setOpacity] = useState(1);
+
+  const location = useLocation();
+
+  // scrolls back to top of page for each route when clicked
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
 
   useEffect(() => {
     const handleScroll = () => {
