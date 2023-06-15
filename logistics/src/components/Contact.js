@@ -1,17 +1,18 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import "../css/Contact.css";
+import Footer from "./Footer";
+
 
 const Contact = () => {
-
+   
     return (
-        <div>
-            <ContactForm />
-            <div className="contact-container">
-            
-            </div>
+    <div className="content">
+      <ContactForm />
+      <Footer />
+    </div>
+    
+);
+};
 
-        </div>
-    )
-}
 export default Contact;
