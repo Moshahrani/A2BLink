@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from "react";
 import FourPoints from "./FourPoints";
 import Consultation from "./Consultation";
 import ThreeStep from "./ThreeStep";
-import ContactForm from "./ContactForm";
-import Footer from "./Footer";
 import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
