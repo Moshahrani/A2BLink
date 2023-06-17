@@ -66,7 +66,6 @@
   
   /* // mobile view */
 
-
   /* @media (max-width: 768px) { */
     @media (max-width: 832px) {
     .consult-container {
@@ -81,9 +80,9 @@
       transform: translate(-50%, -50%);
     }
     .consult-image {
+      background-image: url("../assets/truckDrive2.jpeg");
       background-size: cover;
-      background-position: center;
-      background-attachment: none;
+      background-attachment: scroll;
     }
   }
   
