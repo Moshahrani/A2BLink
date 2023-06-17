@@ -1,5 +1,6 @@
 .main-container {
   position: relative;
+  /* width: 100%; */
 }
 .intro-container {
   color: black;
@@ -22,14 +23,7 @@
   animation: falling 2s ease forwards;
 }
 
-.mission-statement {
-  font-size: 3vw;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  animation: falling 2s ease forwards;
-}
-
-.opening-statement h1.statement,
-h2.mission-statement {
+.opening-statement h1.statement {
   text-shadow: 1px 1px 0 #ffb901, -2px 2px 0 #ffb901, 1px -1px 0 #ffb901,
     -2px -2px 0 #ffb901;
     
@@ -47,3 +41,19 @@ h2.mission-statement {
     opacity: 1;
   }
 }
+
+
+/* mobile view  */
+
+/* @media (max-width: 768px) { */
+  @media (max-width: 832px) {
+  .statement {
+    font-size: 11vw;
+    margin-top: 50px;
+    animation-duration: 1.5s;
+  }
+
+}
+
+
+
