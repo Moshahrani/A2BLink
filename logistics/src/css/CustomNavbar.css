@@ -25,7 +25,9 @@
   position: sticky;
   /* margin-top: 10px;
   margin-bottom: 10px; */
-  height: 140px;
+  /* height: 140px; */
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
 
 .custom-navbar .nav-link {
@@ -51,11 +53,6 @@
   white-space: nowrap;
 }
 
-.nav-link {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 2px;
-}
 
 /* line animation during hover of navbar items */
 .nav-link::after {
@@ -75,7 +72,8 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 786px) { */
+  @media (max-width: 832px) {
   .custom-logo {
     display: none;
   }
@@ -83,9 +81,12 @@
     width: 170px;
     object-fit: contain;
     margin-right: 30px;
-    margin-left: 30px;
+    margin-left: 10px;
     display: block;
   }
+  /* .company-logo {
+    display: none
+  } */
 }
 
 /* media query for nav link padding */
