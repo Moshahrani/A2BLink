@@ -65,9 +65,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ThreeStep />
       <FourPoints />
       <Consultation />
-      <ThreeStep />
       {/* <ContactForm ref={contactFormRef} /> */}
       {/* <Footer /> */}
     </div>
