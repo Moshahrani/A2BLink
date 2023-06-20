@@ -7,19 +7,18 @@
   /* color: #ffb901; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   text-align: center;
-  /* margin: 30px auto; */
-  margin-left: 40px;
-  margin-right: 40px;
-  height: calc(100% - 140px);
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .statement {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 7vw;
   margin: 20px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   animation: falling 2s ease forwards;
 }
 
