@@ -48,7 +48,7 @@
   @media (max-width: 832px) {
   .statement {
     font-size: 11vw;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     animation-duration: 1.5s;
   }
 
