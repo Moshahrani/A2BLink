@@ -5,6 +5,7 @@ const ThreeStep = () => {
     <div className="Threestep-component">
       <div className="Threestep-image"></div>
       <div className="Threestep-container">
+        <h2 className="Threestep-intro">One unified marketplace. Various modes for what you need.</h2>
         <h2>Solution in 3 Easy Steps </h2>
         <div className="sub-container-wrapper">
           <div className="sub-container">
