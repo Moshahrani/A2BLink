@@ -8,11 +8,11 @@ const FourPoints = () => {
   return (
     <div>
       <div className="fourstep-container">
-        <div className="fourstep-main-text">
+        {/* <div className="fourstep-main-text">
           <div className="fourstep-text">
             One unified marketplace. Various modes for what you need.
           </div>
-        </div>
+        </div> */}
         <div className="info-box">
           <div className="info-row">
             <div className="info-container">
