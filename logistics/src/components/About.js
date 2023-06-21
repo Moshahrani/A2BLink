@@ -39,6 +39,7 @@ const About = () => {
               make data-driven decisions that drive efficiency and cost savings.
               With our data analytics expertise, we empower you to stay one step
               ahead in an ever-changing market.
+              <br></br>
               <br></br>We embrace an agile approach to logistics management,
               understanding that adaptability and responsiveness are paramount
               in today's fast-paced business landscape. Our agile methodologies
@@ -46,6 +47,7 @@ const About = () => {
               challenges, and shifting customer demands. By staying nimble and
               flexible, we ensure that your supply chain remains optimized,
               resilient, and ready to seize new opportunities.
+              <br></br>
               <br></br> At the heart of everything we do is our unwavering
               customer focus. We believe that your success is our success, and
               we are committed to understanding your unique logistical
