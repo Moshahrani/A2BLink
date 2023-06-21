@@ -118,12 +118,43 @@
 .four-image {
   width: 350px;
   height: 260px;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ---- hover effect  with text replacement */
+.image-overlay {
+  position: relative;
+}
+
+
+.image-overlay:hover .four-image {
+  opacity: 0.5;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+.overlay-text:hover {
+  cursor: pointer;
+}
+
+.image-overlay:hover .overlay-text {
+  opacity: 1;
 }
 
 /* // mobile view */
 
 /* @media (max-width: 768px) { */
-  @media (max-width: 832px) {
+@media (max-width: 832px) {
   .fourstep-text {
     font-size: 6vw;
     animation-duration: 1.5s;
