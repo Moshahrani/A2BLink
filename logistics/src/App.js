@@ -12,9 +12,9 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
-      <div className="app-container">
+      <div>
         <CustomNavbar />
-        <div className="content-container">
+        {/* <div className="content-container"> */}
           <Routes>
             <Route
               path="/"
@@ -49,7 +49,7 @@ const App = () => {
               }
             />
           </Routes>
-        </div>
+        {/* </div> */}
       </div>
       <Footer />
     </Router>
