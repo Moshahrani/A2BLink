@@ -53,6 +53,7 @@
 
 .nav-link {
   white-space: nowrap;
+  position: relative;
 }
 
 
