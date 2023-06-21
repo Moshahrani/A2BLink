@@ -92,9 +92,8 @@ const FourPoints = () => {
           <Modal.Title>Contact Information</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {/* You can replace this with the contents you want in your modal */}
           <ContactForm
-            freightType={freightType}
+            initialFreightType={freightType}
             handleModalClose={handleModalToggle}
           />
         </Modal.Body>
