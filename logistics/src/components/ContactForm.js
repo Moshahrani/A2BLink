@@ -1,15 +1,19 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Form, Col, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = ({ handleModalClose, freightType, style }) => {
+const ContactForm = ({ handleModalClose, initialFreightType, style }) => {
   const form = useRef();
+
+  const [freightType, setFreightType] = useState(initialFreightType);
+  const [otherFreightType, setOtherFreightType] = useState("");
 
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
+    freightType: "",
   });
 
   const [formErrors, setFormErrors] = useState({
@@ -17,6 +21,20 @@ const ContactForm = ({ handleModalClose, freightType, style }) => {
     email: "",
     message: "",
   });
+
+  // store updated value for freight type into formValues
+useEffect(() => {
+  if (freightType !== "Other") {
+    setFormValues((prevFormValues) => ({ ...prevFormValues, freightType }));
+  }
+}, [freightType]);
+
+// when otherFreightType changes, update formValues
+useEffect(() => {
+  if (freightType === "Other") {
+    setFormValues((prevFormValues) => ({ ...prevFormValues, freightType: otherFreightType }));
+  }
+}, [otherFreightType, freightType]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,8 +45,8 @@ const ContactForm = ({ handleModalClose, freightType, style }) => {
       console.log(formValues);
       emailjs
         .sendForm(
-        //   "service_qungzev",
-        //   "template_16a8kcp",
+            "service_qungzev",
+            "template_16a8kcp",
           form.current,
           process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
@@ -49,7 +67,11 @@ const ContactForm = ({ handleModalClose, freightType, style }) => {
         email: "",
         phone: "",
         message: "",
+        freightType: "",
       });
+
+      setFreightType(initialFreightType);
+      setOtherFreightType("");
     }
   };
 
@@ -152,10 +174,40 @@ const ContactForm = ({ handleModalClose, freightType, style }) => {
             {formErrors.message}
           </Form.Control.Feedback>
         </Form.Group>
-        <div className="address" style={style} >
-          <Form.Label>Freight Type : {freightType}</Form.Label>
+        <div className="freight-type" style={style}>
+          <Form.Label>Freight Type</Form.Label>
+          <Form.Select
+            value={freightType}
+            onChange={(e) => {
+              setFreightType(e.target.value);
+              if (e.target.value !== "Other") {
+                setOtherFreightType("");
+              }
+            }}
+          >
+            <option value="">Select Freight Type</option>
+            <option value="Full Truckload">Full Truckload</option>
+            <option value="Less Than Truckload">Less Than Truckload</option>
+            <option value="Air Freight">Air Freight</option>
+            <option value="Intermodal">Intermodal</option>
+            <option value="Other">Other</option>
+          </Form.Select>
+          {freightType === "Other" && (
+            <Form.Control
+              type="text"
+              placeholder="Enter specific freight type"
+              value={otherFreightType}
+              onChange={(e) => setOtherFreightType(e.target.value)}
+            />
+          )}
         </div>
-        <Button className="submit-button" style={{ marginTop: "20px", border: "none", borderRadius: "6px" }} variant="primary" type="submit" onClick={handleSubmit}>
+        <Button
+          className="submit-button"
+          style={{ marginTop: "20px", border: "none", borderRadius: "6px" }}
+          variant="primary"
+          type="submit"
+          onClick={handleSubmit}
+        >
           Submit
         </Button>
       </Form>
