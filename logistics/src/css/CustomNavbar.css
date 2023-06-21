@@ -6,12 +6,13 @@
   display: none;
 }
 .custom-logo {
-  width: 400px;
-  height: 100px;
+  /* width: 400px;
+  height: 90%; */
+  width: 220px;
   object-fit: contain;
+  /* position: absolute; */
   position: absolute;
-  right: 0;
-  margin-right: -60px;
+  right: 20px;
 }
 
 .custom-logo:hover {
@@ -19,7 +20,7 @@
 }
 
 .custom-navbar {
-  /* z-index: 1000; */
+  z-index: 1000;
   /* background-color: white; */
   background-color: #323232;
   position: sticky;
@@ -29,6 +30,7 @@
   padding-top: 30px !important;
   padding-bottom: 30px !important;
 }
+
 
 .custom-navbar .nav-link {
   color: white;
@@ -80,13 +82,17 @@
   .company-logo {
     width: 170px;
     object-fit: contain;
-    margin-right: 30px;
-    margin-left: 10px;
+    /* margin-right: 30px;
+    margin-left: 10px; */
     display: block;
   }
   /* .company-logo {
     display: none
   } */
+
+  .custom-navbar .nav-link  {
+    margin-left: 10px;
+  }
 }
 
 /* media query for nav link padding */

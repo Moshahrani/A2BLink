@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import "../css/CustomNavbar.css";
 import resized from "../assets/resized.png";
@@ -16,11 +16,11 @@ const CustomNavbar = () => {
   }, [location]);
 
 
-  useEffect(() => {
+   useEffect(() => {
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled > 50) { 
-        setOpacity(1);
+      if (scrolled > 50) {
+        setOpacity(0.7);
       } else {
         setOpacity(1);
       }
@@ -32,6 +32,7 @@ const CustomNavbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
 
   return (
     <Navbar
