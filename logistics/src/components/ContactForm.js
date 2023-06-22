@@ -109,9 +109,9 @@ useEffect(() => {
 
   return (
     <div>
-      <Form ref={form} className="myForm">
+      <Form ref={form} className="myForm" style={{ backgroundColor: '#f5f5f5' }}> 
         <Form.Group as={Col} controlId="formGridName">
-          <Form.Label>Name*</Form.Label>
+          <Form.Label style={{ color: 'black', fontSize: '18px' }}>Name*</Form.Label>
           <Form.Control
             name="name"
             type="name"
@@ -128,7 +128,7 @@ useEffect(() => {
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email*</Form.Label>
+          <Form.Label style={{ color: 'black', fontSize: '18px' }}>Email*</Form.Label>
           <Form.Control
             name="email"
             type="email"
@@ -145,7 +145,7 @@ useEffect(() => {
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridphone">
-          <Form.Label>Phone Number</Form.Label>
+          <Form.Label style={{ color: 'black', fontSize: '18px' }}>Phone Number</Form.Label>
           <Form.Control
             name="phone"
             placeholder="(012)-345-6789"
@@ -157,7 +157,7 @@ useEffect(() => {
         </Form.Group>
 
         <Form.Group as={Col} id="formGridmessage">
-          <Form.Label>Message*</Form.Label>
+          <Form.Label style={{ color: 'black', fontSize: '18px' }}>Message*</Form.Label>
           <Form.Control
             name="message"
             as="textarea"
@@ -175,7 +175,7 @@ useEffect(() => {
           </Form.Control.Feedback>
         </Form.Group>
         <div className="freight-type" style={style}>
-          <Form.Label>Freight Type</Form.Label>
+          <Form.Label style={{ color: 'black', fontSize: '18px' }}>Freight Type</Form.Label>
           <Form.Select
             value={freightType}
             onChange={(e) => {
@@ -204,7 +204,8 @@ useEffect(() => {
         <Button
           className="submit-button"
           style={{ marginTop: "20px", border: "none", borderRadius: "6px" }}
-          variant="primary"
+          // variant="primary"
+          variant="warning"
           type="submit"
           onClick={handleSubmit}
         >
