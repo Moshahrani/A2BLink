@@ -89,7 +89,7 @@ const FourPoints = () => {
       </div>
       <Modal show={showModal} onHide={handleModalToggle}>
         <Modal.Header closeButton>
-          <Modal.Title>Contact Information</Modal.Title>
+          <Modal.Title>How Can We Help You?</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <ContactForm
