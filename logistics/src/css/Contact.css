@@ -28,9 +28,10 @@
   margin-top: 20px;
 }
 
-@media (max-width: 832px) { 
+@media (max-width: 832px) {
   .contact-container {
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
   }
 }
 
@@ -52,4 +53,5 @@
 .video-text {
   position: relative;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
