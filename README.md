@@ -1,6 +1,6 @@
 # Logistics Company Website
 
-This project is a front-end website developed for a logistics company. The website provides information about freight and shipping services offered by the company and allows users to contact the company for a quote. The website is designed with a focus on responsive design to ensure a seamless experience across various devices.
+This front-end website, developed through my freelancing work, serves as an informative platform for a logistics company client. It showcases their freight and shipping services and enables users to request quotes. The website is designed with a responsive layout, ensuring a seamless experience across devices. Collaboration with the client ensured brand consistency, while performance optimization prioritizes fast loading times.
 
 ## Technologies Used
 
