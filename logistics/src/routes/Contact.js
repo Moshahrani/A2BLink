@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
 import "../css/Contact.css";
 import Unpacking from "../assets/Unpacking.mp4";
 

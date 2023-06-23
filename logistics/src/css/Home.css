@@ -19,7 +19,8 @@
   font-size: 7vw;
   margin: 20px;
   /* margin-top: 100px; */
-  animation: falling 2s ease forwards;
+  /* animation: falling 2s ease forwards; */
+  animation: fadeIn 3s ease-in-out;
 }
 
 .opening-statement h1.statement {
@@ -37,6 +38,15 @@
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

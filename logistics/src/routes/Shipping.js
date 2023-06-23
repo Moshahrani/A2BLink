@@ -1,4 +1,4 @@
-import FourPoints from "./FourPoints";
+import FourPoints from "../components/FourPoints";
 
 const Shipping = () => (
   <div className="shipping-container">

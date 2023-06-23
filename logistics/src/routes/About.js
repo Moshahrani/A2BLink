@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import AboutUs from "../assets/AboutUs.jpeg";
 import CoreValues from "../assets/CoreValues.jpeg";
 import TheA2B from "../assets/TheA2B.jpeg";
@@ -21,12 +20,12 @@ const About = () => {
             </p>
           </div>
           <div className="about-image-container">
-            <img src={AboutUs} className="about-image" alt="Image 1" />
+            <img src={AboutUs} className="about-image" alt="About Us" />
           </div>
         </div>
         <div className="about-subcontainer">
           <div className="about-image-container">
-            <img src={CoreValues} className="about-image" alt="Image 2" />
+            <img src={CoreValues} className="about-image" alt="Core Values" />
           </div>
           <div className="about-text">
             <h2>Core Values</h2>
@@ -71,7 +70,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-image-container">
-            <img src={TheA2B} className="about-image" alt="Image 3" />
+            <img src={TheA2B} className="about-image" alt="The A2B experience" />
           </div>
         </div>
       </div>

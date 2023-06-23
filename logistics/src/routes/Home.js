@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import FourPoints from "./FourPoints";
-import Consultation from "./Consultation";
-import ThreeStep from "./ThreeStep";
+import FourPoints from "../components/FourPoints";
+import Consultation from "../components/Consultation";
+import ThreeStep from "../components/ThreeStep";
 import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
 
