@@ -1,13 +1,14 @@
 import React from "react";
+import "../css/CoreValues.css";
 
 const CoreValues = () => {
   return (
     <div className="core-container">
       <h1>Core Values</h1>
       <div className="core-subcontainers">
-        <div className="core-subtitle">
+        <div className="core-subcontainer">
           <span>Action Oriented</span>
-          <div className="core-subtext">
+          <div className="core-subtext" style={{ backgroundColor: "#8c52ff" }}>
             <p>
               Being action-oriented defines our culture, propelling us towards
               tangible results and impactful achievements. Rather than dwelling
@@ -16,7 +17,7 @@ const CoreValues = () => {
             </p>
           </div>
         </div>
-        <div className="core-subtitle">
+        <div className="core-subcontainer">
           <span>Expertise</span>
           <div className="core-subtext">
             <p>
@@ -28,7 +29,7 @@ const CoreValues = () => {
             </p>
           </div>
         </div>
-        <div className="core-subtitle">
+        <div className="core-subcontainer">
           <span>Predictable</span>
           <div className="core-subtext">
             <p>
@@ -39,9 +40,9 @@ const CoreValues = () => {
             </p>
           </div>
         </div>
-        <div className="core-subtitle">
+        <div className="core-subcontainer">
           <span>Do More</span>
-          <div className="core-subtext">
+          <div className="core-subtext" style={{ backgroundColor: "#8c52ff" }}>
             <p>
               "Doing More" drives unparalleled efficiency and customer
               satisfaction. Challenging norms and embracing innovation unlocks
@@ -51,11 +52,6 @@ const CoreValues = () => {
             </p>
           </div>
         </div>
-        {/* <div className="core-subtitle">
-        <div className="core-subtext">
-          <p></p>
-        </div>
-      </div> */}
       </div>
     </div>
   );
