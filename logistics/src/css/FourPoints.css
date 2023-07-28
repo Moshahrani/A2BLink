@@ -98,14 +98,11 @@
   display: block;
   width: 30%;
   margin: 0 auto;
-  border-bottom: 2px solid #ffb901;
+  border-bottom: 4px solid #ffb901;
   padding-bottom: 10px;
 }
 .info-container p {
-  /* font-size: 1.4vw; */
   font-size: 20px;
-  /* font-weight: 600; */
-  /* margin: 5px auto; */
   margin-top: 5px;
   margin-bottom: 5px;
   width: 60%;
@@ -124,8 +121,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-
-/* ---- hover effect  with text replacement */
 .image-overlay {
   position: relative;
 }
