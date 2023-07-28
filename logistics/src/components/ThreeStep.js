@@ -1,4 +1,4 @@
-import "../css/ThreeStep.css"; // Import the CSS file for styling
+import "../css/ThreeStep.css";
 
 const ThreeStep = () => {
   return (
