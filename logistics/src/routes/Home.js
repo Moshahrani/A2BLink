@@ -61,9 +61,7 @@ const Home = () => {
         ></div>
         <div className="intro-container">
           <div className="opening-statement">
-            <h1 className="statement">
-              Revolutionizing the way freight is moved
-            </h1>
+            <h1 className="statement">Providing Value in Logistics</h1>
           </div>
         </div>
       </div>
