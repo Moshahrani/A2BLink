@@ -68,9 +68,9 @@ const Home = () => {
       <FactsInsights />
       {/* <ThreeStep /> */}
       <FourPoints />
+      <img className="arrows" src={Arrows} alt="arrows" />
       <CoreValues />
       <Consultation />
-      <img className="arrows" src={Arrows} alt="arrows" />
       {/* <ContactForm ref={contactFormRef} /> */}
       {/* <Footer /> */}
     </div>
