@@ -36,7 +36,7 @@ const CoreValues = () => {
               Through robust systems and data-driven insights, we reduce
               uncertainties and improve outcomes. Embracing predictability
               empowers us to make informed decisions and exceed expectations,
-              setting new standards for reliability and trustworthiness
+              setting new standards for reliability and trustworthiness.
             </p>
           </div>
         </div>
