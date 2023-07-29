@@ -18,6 +18,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 7vw;
   margin: 20px;
+  margin-top: 40px;
   /* margin-top: 100px; */
   /* animation: falling 2s ease forwards; */
   animation: fadeIn 3s ease-in-out;
