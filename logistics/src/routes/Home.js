@@ -9,7 +9,6 @@ import Cargo from "../assets/Cargo.mp4";
 import Arrows from "../assets/CustomArrows.png";
 
 const Home = () => {
-
   const videoRef = useRef();
 
   // video should autoplay across all devices and screen sizes
@@ -71,8 +70,8 @@ const Home = () => {
       <FactsInsights />
       {/* <ThreeStep /> */}
       <FourPoints />
-      <Consultation />
       <CoreValues />
+      <Consultation />
       <img className="arrows" src={Arrows} />
       {/* <ContactForm ref={contactFormRef} /> */}
       {/* <Footer /> */}
