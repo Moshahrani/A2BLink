@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
   
   .core-subcontainers {
@@ -92,6 +93,6 @@
         font-weight: 500;
       }
     .core-container {
-      margin-bottom: -20px;
+      /* margin-bottom: -20px; */
     }
   }
