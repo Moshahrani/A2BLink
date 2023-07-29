@@ -55,19 +55,36 @@ const CustomNavbar = () => {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
+          <Nav.Link
+            as={Link}
+            to="/"
+            onClick={() => setExpanded(false)}
+            className={location.pathname === "/" ? "active-link" : ""}
+          >
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/about" onClick={() => setExpanded(false)}>
+          <Nav.Link
+            as={Link}
+            to="/about"
+            onClick={() => setExpanded(false)}
+            className={location.pathname === "/about" ? "active-link" : ""}
+          >
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/shipping" onClick={() => setExpanded(false)}>
+          <Nav.Link
+            as={Link}
+            to="/shipping"
+            onClick={() => setExpanded(false)}
+            className={location.pathname === "/shipping" ? "active-link" : ""}
+          >
             Shipping
           </Nav.Link>
-          {/* <Nav.Link as={Link} to="/lead" onClick={() => setExpanded(false)}>
-            Lead
-          </Nav.Link> */}
-          <Nav.Link as={Link} to="/contact" onClick={() => setExpanded(false)}>
+          <Nav.Link
+            as={Link}
+            to="/contact"
+            onClick={() => setExpanded(false)}
+            className={location.pathname === "/contact" ? "active-link" : ""}
+          >
             Contact
           </Nav.Link>
         </Nav>

@@ -76,6 +76,18 @@
   transform: scaleX(1);
 }
 
+/* important override for nav links to 
+stay highlighted while in that route */
+
+.custom-navbar .nav-link.active-link {
+  color: #ffb901 !important;
+}
+
+.custom-navbar .nav-link.active-link::after {
+  transform: scaleX(1);
+}
+
+
 @media (max-width: 960px) {
   .nav-link::after {
     width: 10%;
