@@ -16,7 +16,7 @@ const Consultation = () => {
           <div className="consult-text">
             <h2>Do you need a consultation?</h2>
             {/* <p>Express can give you lots of advantages, from which you will surely benefit.</p> */}
-            <button onClick={handleOnClick}>Contact Us</button>
+            <button className="consult-button" onClick={handleOnClick}>Contact Us</button>
           </div>
         </div>
       );
