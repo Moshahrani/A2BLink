@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import FourPoints from "../components/FourPoints";
 import Consultation from "../components/Consultation";
-import ThreeStep from "../components/ThreeStep";
+// import ThreeStep from "../components/ThreeStep";
 import CoreValues from "../components/CoreValues";
 import FactsInsights from "../components/FactsInsights";
 import "../css/Home.css";
@@ -70,7 +70,7 @@ const Home = () => {
       <FourPoints />
       <CoreValues />
       <Consultation />
-      <img className="arrows" src={Arrows} />
+      <img className="arrows" src={Arrows} alt="arrows" />
       {/* <ContactForm ref={contactFormRef} /> */}
       {/* <Footer /> */}
     </div>
