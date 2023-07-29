@@ -2,8 +2,11 @@ import React, { useEffect, useRef } from "react";
 import FourPoints from "../components/FourPoints";
 import Consultation from "../components/Consultation";
 import ThreeStep from "../components/ThreeStep";
+import CoreValues from "../components/CoreValues";
+import FactsInsights from "../components/FactsInsights";
 import "../css/Home.css";
 import Cargo from "../assets/Cargo.mp4";
+import Arrows from "../assets/CustomArrows.png";
 
 const Home = () => {
 
@@ -65,9 +68,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <ThreeStep />
+      <FactsInsights />
+      {/* <ThreeStep /> */}
       <FourPoints />
       <Consultation />
+      <CoreValues />
+      <img className="arrows" src={Arrows} />
       {/* <ContactForm ref={contactFormRef} /> */}
       {/* <Footer /> */}
     </div>
